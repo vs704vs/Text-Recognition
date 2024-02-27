@@ -10,4 +10,5 @@ if uploaded_image is not None:
     img = Image.open(uploaded_image)
     text = tess.image_to_string(img)
 
-    print(text)
+    st.write("Data:")
+    st.write(text)
