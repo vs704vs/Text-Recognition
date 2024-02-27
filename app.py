@@ -7,7 +7,7 @@ import streamlit as st
 uploaded_image = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_image is not None:
-    img = Image.open("textHand.png")
+    img = Image.open(uploaded_image)
     text = tess.image_to_string(img)
 
     print(text)
